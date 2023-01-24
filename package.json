@@ -9,6 +9,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.7.0",
+    "imagemin-pngquant": "^9.0.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "imports-loader": "^0.7.1",
@@ -18,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "webpack --mode development --entry ./src/index.js --output-path ./static/frontend",
+    "build": "webpack --mode production --entry ./src/index.js --output-path ./static/frontend"
   },
   "eslintConfig": {
     "extends": [
@@ -60,5 +63,14 @@
     "webpack-dev-server": "^2.4.2"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vermashreyansh05/django_react.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/vermashreyansh05/django_react/issues"
+  },
+  "homepage": "https://github.com/vermashreyansh05/django_react#readme"
 }
